@@ -7,14 +7,14 @@ Microchip tinyAVR® 0- and 1-series, and megaAVR® 0-series devices feature a 10
 
 An ADC conversion can be started by software, or by using the Event System (EVSYS) to route an event from other peripherals. A window compare feature is available for monitoring the input signal and can be configured to trigger an interrupt on user-defined thresholds for under, over, inside, or outside a window, with minimum software intervention required.
 
-This repository describes the basic functionality of the ADC in Microchip tinyAVR® 0- and 1-series, and megaAVR®  0-series devices in Single ended mode. It is explained thorougly in the document [*AN2573 - ADC Basics with tinyAVR® 0- and 1-series, and megaAVR® 0-series*](www.microchip.com/DS00002573) from Microchip. The ATtiny817 Xplained Pro board will be used in these examples.
+This repository describes the basic functionality of the ADC in Microchip tinyAVR® 0- and 1-series, and megaAVR®  0-series devices in Single ended mode. It is explained thorougly in the document [*AN2573 - ADC Basics with tinyAVR® 0- and 1-series, and megaAVR® 0-series*](https://www.microchip.com/DS00002573) from Microchip. The ATtiny817 Xplained Pro board will be used in these examples.
 
 ## Related Documentation
 
-- [AN2573 - ADC Basics with tinyAVR® 0- and 1-series, and megaAVR® 0-series](www.microchip.com/DS00002573)
-- [ATtiny817 Xplained Pro User Guide](www.microchip.com/DS50002684)
-- [ATtiny817 Data Sheet](www.microchip.com/DS40001901)
-- [ATtiny3217 Product Family](https://www.microchip.com/design-centers/8-bit/avr-mcus/device-selection/attiny3217y)
+- [AN2573 - ADC Basics with tinyAVR® 0- and 1-series, and megaAVR® 0-series](https://www.microchip.com/DS00002573)
+- [ATtiny817 Xplained Pro User Guide](https://www.microchip.com/DS50002684)
+- [ATtiny817 Data Sheet](https://www.microchip.com/DS40001901)
+- [Device Page](https://www.microchip.com/wwwproducts/en/ATtiny817)
 
 ## Software Used
 
@@ -30,13 +30,13 @@ This repository describes the basic functionality of the ADC in Microchip tinyAV
 
 1. Connect the ATtiny817 Xplained Pro board to the PC using the USB cable.
 
-2. Download the zip file or clone the example to get the source code.
 
 ## Operation
+1. Download the zip file or clone the example to get the source code.
 
-1. Open the project in MPLAB X IDE.
+2. Open the project in MPLAB X IDE.
 
-2. One application with four use cases has been developed and tested on the ATtiny817 Xplained Pro board. The following configurations are common for all four use cases:
+3. One application with four use cases has been developed and tested on the ATtiny817 Xplained Pro board. The following configurations are common for all four use cases:
     - CPU Clock: 3.33 MHz
     - Peripherals used:
       - ADC, VREF and USART
@@ -49,7 +49,8 @@ This repository describes the basic functionality of the ADC in Microchip tinyAV
         - TXEN: Transmission Enable is set
         - Baud Rate: 9600
       - GPIO output pin PB4: LED0
-3. Choose the use case by configuring the value of the macro *EXAMPLE_CODE* in *main.c*.
+      
+4. Choose the use case by configuring the value of the macro *EXAMPLE_CODE* in *main.c*.
     - Case *FREE_RUNNING*: The first conversion is started when the initial configuration of the Free-Running mode is executed. When the conversion cycle is completed, the ADC result is read from the ADC0.res register. A new conversion cycle is then started immediately after the previous conversion cycle is completed.
 
     - Case *SINGLE_CONVERSION*: The conversion starts after the *read_adc_single_conversion()* function is called. After one conversion is completed a new single conversion has to be manually configured in order to start.
@@ -59,10 +60,10 @@ This repository describes the basic functionality of the ADC in Microchip tinyAV
     - Case *SAMPLE_ACCUMULATOR*:  In this use case, the ADC is configured to accumulate 64 samples automatically in one conversion in order to average out noise or to get averaged ADC result. Consequently, the conversion complete flag is only raised once, after taking the last sample of the accumulation. The ADC result is averaged over the configured number of samples. 
 
 
-4. Build the solution and program the device by using the buttons *Build* and *Make and Program Device*.
+5. Build the solution and program the device by using the buttons *Build* and *Make and Program Device*.
 
-5. The ADC result is converted to voltage format and printed through the USART to the terminal.
+6. The ADC result is converted to voltage format and printed through the USART to the terminal.
 
-## Summary
+## Conclusion
 
 This project is an illustration of four basic use cases based around the ADC of Microchip tinyAVR® 0- and 1-series, and megaAVR®  0-series devices.
