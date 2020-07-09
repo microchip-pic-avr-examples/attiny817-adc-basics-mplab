@@ -14,12 +14,12 @@ This repository describes the basic functionality of the ADC in Microchip tinyAV
 - [AN2573 - ADC Basics with tinyAVR® 0- and 1-series, and megaAVR® 0-series](https://www.microchip.com/DS00002573)
 - [ATtiny817 Xplained Pro User Guide](https://www.microchip.com/DS50002684)
 - [ATtiny817 Data Sheet](https://www.microchip.com/DS40001901)
-- [Device Page](https://www.microchip.com/wwwproducts/en/ATtiny817)
+- [ATtiny817 Device Page](https://www.microchip.com/wwwproducts/en/ATtiny817)
 
 ## Software Used
 
-- [MPLAB® X IDE](http://www.microchip.com/mplab/mplab-x-ide) v5.30 or newer
-- [MPLAB® XC8](http://www.microchip.com/mplab/compilers) 2.10 or a newer
+- [MPLAB® X IDE](http://www.microchip.com/mplab/mplab-x-ide) v5.40 or later
+- [MPLAB® XC8](http://www.microchip.com/mplab/compilers) 2.20 or a later
 
 ## Hardware Used
 
