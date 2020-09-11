@@ -3,28 +3,28 @@
     "category": "com.microchip.ide.project",
     "content": {
         "metaDataVersion": "1.1.0",
-        "name": "com.microchip.mcu8.mplabx.project.",
-        "version": " ",
-        "displayName": "  ",
-        "projectName": "",
-        "shortDescription": "",
+        "name": "ADC Basics with tinyAVR® 0- and 1-series, and megaAVR® 0-series",
+        "version": "1.0.0",
+        "displayName": "attiny817 adc basics mplab",
+        "projectName": "attiny817-adc-basics-mplab",
+        "shortDescription": "Example describing the basic functionality of the ADC in tinyAVR 1-series.",
         "ide": {
-            "name": "",
-            "semverRange": ""
+            "name": "MPLABX",
+            "semverRange": ">=5.40"
         },
         "compiler": [
-			{
-				"name": "",
-				"semverRange": ""
-			}
-		],
+            {
+                "name": "XC8",
+                "semverRange": "^2.29"
+            }
+        ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "ATtiny_DFP",
+            "semverRange": "^2.2.89"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "START",
+            "semverRange": ">=1.7.360"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -32,37 +32,39 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "",
+                "name": "ATtiny817",
                 "versionRange": "*"
             }
         },
-        "author": "",
+        "author": "Microchip",
         "subcategories": [
-            "",
+            "START",
             [
-               "Peripherals", ""
+                "Peripherals",
+                "ADC"
             ],
             [
-               "Peripherals", ""
-            ]            			
+                "Development Kit",
+                "ATtiny817 Xplained Pro"
+            ]
         ],
         "peripherals": [
-            "",""
+            "ADC"
         ],
         "keywords": [
             "",
-            ""			
+            ""
         ],
-		"additionalData": {
-			"longDescription": {
-				"metaDataVersion": "1.0.0",
-				"category": "com.microchip.portal.fileRef",
-				"content": {
-					"metaDataVersion": "1.0.0",
-					"fileName": "./README.md",
-					"mimeType": "text/markdown"
-				}
-			}
-		}
-	}
+        "additionalData": {
+            "longDescription": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.portal.fileRef",
+                "content": {
+                    "metaDataVersion": "1.0.0",
+                    "fileName": "./README.md",
+                    "mimeType": "text/markdown"
+                }
+            }
+        }
+    }
 }
