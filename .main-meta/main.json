@@ -3,9 +3,9 @@
     "category": "com.microchip.ide.project",
     "content": {
         "metaDataVersion": "1.1.0",
-        "name": "ADC Basics with tinyAVR® 0- and 1-series, and megaAVR® 0-series",
+        "name": "com.microchip.mcu8.mplabx.project.attiny817-adc-basics-mplab",
         "version": "1.0.0",
-        "displayName": "attiny817 adc basics mplab",
+        "displayName": "ADC Basics with tinyAVR® 0- and 1-series, and megaAVR® 0-series",
         "projectName": "attiny817-adc-basics-mplab",
         "shortDescription": "Example describing the basic functionality of the ADC in tinyAVR 1-series.",
         "ide": {
@@ -52,8 +52,6 @@
             "ADC"
         ],
         "keywords": [
-            "",
-            ""
         ],
         "additionalData": {
             "longDescription": {
