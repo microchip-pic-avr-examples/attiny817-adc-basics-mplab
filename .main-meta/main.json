@@ -2,20 +2,20 @@
     "metaDataVersion": "1.0.0",
     "category": "com.microchip.ide.project",
     "content": {
-        "metaDataVersion": "1.1.0",
+        "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.attiny817-adc-basics-mplab",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "displayName": "ADC Basics with tinyAVR® 0- and 1-series, and megaAVR® 0-series",
         "projectName": "attiny817-adc-basics-mplab",
         "shortDescription": "Example describing the basic functionality of the ADC in tinyAVR 1-series.",
         "ide": {
-            "name": "MPLABX",
-            "semverRange": ">=5.40"
+            "name": "MPLAB X",
+            "semverRange": ">=5.40.0"
         },
         "compiler": [
             {
                 "name": "XC8",
-                "semverRange": "^2.29"
+                "semverRange": "^2.29.0"
             }
         ],
         "dfp": {
@@ -32,26 +32,22 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "ATtiny817",
+                "name": "ATTINY817",
                 "versionRange": "*"
             }
         },
         "author": "Microchip",
-        "subcategories": [
-            "START",
-            [
-                "Peripherals",
-                "ADC"
-            ],
-            [
-                "Development Kit",
-                "ATtiny817 Xplained Pro"
-            ]
-        ],
         "peripherals": [
             "ADC"
         ],
         "keywords": [
+            "Window Compare",
+            "Free-Running",
+            "Sample Accumulation",
+            "SAR ADC",
+            "10-bit ADC",
+            "LED",
+            "START"
         ],
         "additionalData": {
             "longDescription": {
